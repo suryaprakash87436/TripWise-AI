@@ -1,0 +1,328 @@
+DESTINATION: Mahabalipuram
+STATE: Tamil Nadu
+TRAVEL_TYPE: Historical, Beach, Cultural, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, history lovers, photographers
+FAMOUS_FOR: Shore Temple, Pancha Rathas, rock carvings, beaches
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Explore monuments in the morning and carry sun protection.
+
+
+DESTINATION: Rameswaram
+STATE: Tamil Nadu
+TRAVEL_TYPE: Religious, Historical, Beach, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, spiritual travellers, history lovers
+FAMOUS_FOR: Ramanathaswamy Temple, Pamban Bridge, Dhanushkodi
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Plan temple visits early and keep comfortable footwear.
+
+
+DESTINATION: Kanyakumari
+STATE: Tamil Nadu
+TRAVEL_TYPE: Beach, Religious, Nature, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, couples, photographers
+FAMOUS_FOR: Vivekananda Rock Memorial, beaches, sunrise and sunset
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Plan around sunrise and sunset for the best views.
+
+
+DESTINATION: Madurai
+STATE: Tamil Nadu
+TRAVEL_TYPE: Religious, Historical, Cultural, Family
+BUDGET_LEVEL: Low
+BEST_FOR: Families, spiritual travellers, history lovers
+FAMOUS_FOR: Meenakshi Amman Temple, Nayakkar Palace, local markets
+ESTIMATED_DAILY_EXPENSE: ₹1000 - ₹2200
+ESTIMATED_3_DAY_BUDGET: ₹3500 - ₹6500
+TRAVEL_TIPS: Visit temples early in the morning and dress appropriately.
+
+
+DESTINATION: Thanjavur
+STATE: Tamil Nadu
+TRAVEL_TYPE: Historical, Religious, Cultural
+BUDGET_LEVEL: Low
+BEST_FOR: History lovers, families, photographers
+FAMOUS_FOR: Brihadeeswarar Temple, Thanjavur Palace, traditional art
+ESTIMATED_DAILY_EXPENSE: ₹1000 - ₹2000
+ESTIMATED_3_DAY_BUDGET: ₹3500 - ₹6000
+TRAVEL_TIPS: Start sightseeing early and explore nearby heritage attractions.
+
+
+DESTINATION: Valparai
+STATE: Tamil Nadu
+TRAVEL_TYPE: Nature, Wildlife, Adventure, Hill Station
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Nature lovers, photographers, adventure seekers
+FAMOUS_FOR: Tea estates, forests, waterfalls, wildlife
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Drive carefully through forest roads and start sightseeing early.
+
+
+DESTINATION: Kolli Hills
+STATE: Tamil Nadu
+TRAVEL_TYPE: Adventure, Nature, Hill Station
+BUDGET_LEVEL: Low
+BEST_FOR: Adventure seekers, families, nature lovers
+FAMOUS_FOR: Waterfalls, viewpoints, mountain roads
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Carry basic medicines and check road conditions before travelling.
+
+
+DESTINATION: Kochi
+STATE: Kerala
+TRAVEL_TYPE: Historical, Cultural, Beach, Food, Family
+BUDGET_LEVEL: Medium
+BEST_FOR: Families, couples, food lovers
+FAMOUS_FOR: Fort Kochi, Chinese fishing nets, museums, cafes
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹5500 - ₹10000
+TRAVEL_TIPS: Explore Fort Kochi on foot and try traditional Kerala cuisine.
+
+
+DESTINATION: Alleppey
+STATE: Kerala
+TRAVEL_TYPE: Nature, Backwaters, Relaxation, Family
+BUDGET_LEVEL: Medium
+BEST_FOR: Couples, families, nature lovers
+FAMOUS_FOR: Backwaters, houseboats, canals, beaches
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹6000 - ₹11000
+TRAVEL_TIPS: Book houseboats in advance during busy travel periods.
+
+
+DESTINATION: Thekkady
+STATE: Kerala
+TRAVEL_TYPE: Wildlife, Nature, Adventure
+BUDGET_LEVEL: Medium
+BEST_FOR: Wildlife lovers, families, adventure seekers
+FAMOUS_FOR: Periyar Wildlife Sanctuary, boating, spice plantations
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹6000 - ₹10500
+TRAVEL_TIPS: Book wildlife activities early and carry comfortable shoes.
+
+
+DESTINATION: Varkala
+STATE: Kerala
+TRAVEL_TYPE: Beach, Nature, Relaxation
+BUDGET_LEVEL: Medium
+BEST_FOR: Couples, backpackers, beach lovers
+FAMOUS_FOR: Varkala Beach, cliffs, cafes, sunset views
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹5500 - ₹10000
+TRAVEL_TIPS: Visit the beach during evening hours and carry sun protection.
+
+
+DESTINATION: Vagamon
+STATE: Kerala
+TRAVEL_TYPE: Hill Station, Nature, Adventure
+BUDGET_LEVEL: Medium
+BEST_FOR: Couples, families, nature lovers
+FAMOUS_FOR: Meadows, pine forests, viewpoints, paragliding
+ESTIMATED_DAILY_EXPENSE: ₹1600 - ₹3200
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9500
+TRAVEL_TIPS: Check weather conditions before outdoor adventure activities.
+
+
+DESTINATION: Coorg
+STATE: Karnataka
+TRAVEL_TYPE: Nature, Adventure, Hill Station, Wildlife
+BUDGET_LEVEL: Medium
+BEST_FOR: Couples, families, nature lovers
+FAMOUS_FOR: Coffee plantations, waterfalls, forests, viewpoints
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹6000 - ₹10500
+TRAVEL_TIPS: A private vehicle is useful for exploring attractions.
+
+
+DESTINATION: Hampi
+STATE: Karnataka
+TRAVEL_TYPE: Historical, Cultural, Adventure
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: History lovers, photographers, backpackers
+FAMOUS_FOR: Vijayanagara ruins, temples, monuments, rocky landscapes
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Start sightseeing early because afternoons can be hot.
+
+
+DESTINATION: Gokarna
+STATE: Karnataka
+TRAVEL_TYPE: Beach, Adventure, Nature, Spiritual
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Backpackers, couples, beach lovers
+FAMOUS_FOR: Beaches, coastal trails, temples, sunsets
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Carry comfortable footwear for beach trekking and coastal walks.
+
+
+DESTINATION: Udupi
+STATE: Karnataka
+TRAVEL_TYPE: Religious, Beach, Food, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, spiritual travellers, food lovers
+FAMOUS_FOR: Krishna Temple, beaches, Udupi cuisine
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Combine temple visits with nearby beaches.
+
+
+DESTINATION: Lonavala
+STATE: Maharashtra
+TRAVEL_TYPE: Nature, Adventure, Hill Station
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Friends, couples, nature lovers
+FAMOUS_FOR: Waterfalls, caves, viewpoints, forts
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Monsoon offers scenic landscapes but check weather before trekking.
+
+
+DESTINATION: Mahabaleshwar
+STATE: Maharashtra
+TRAVEL_TYPE: Hill Station, Nature, Family
+BUDGET_LEVEL: Medium
+BEST_FOR: Families, couples, nature lovers
+FAMOUS_FOR: Viewpoints, strawberry farms, waterfalls, valleys
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹5500 - ₹10000
+TRAVEL_TIPS: Start sightseeing early and carry light rain protection.
+
+
+DESTINATION: Aurangabad
+STATE: Maharashtra
+TRAVEL_TYPE: Historical, Cultural, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: History lovers, families, photographers
+FAMOUS_FOR: Ajanta Caves, Ellora Caves, historical monuments
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Wear comfortable footwear because cave complexes require walking.
+
+
+DESTINATION: Udaipur
+STATE: Rajasthan
+TRAVEL_TYPE: Historical, Cultural, Romantic, Family
+BUDGET_LEVEL: Medium
+BEST_FOR: Couples, families, photographers
+FAMOUS_FOR: City Palace, Lake Pichola, lakes, palaces
+ESTIMATED_DAILY_EXPENSE: ₹2000 - ₹4000
+ESTIMATED_3_DAY_BUDGET: ₹6500 - ₹12000
+TRAVEL_TIPS: Enjoy lake views in the evening and book accommodation early.
+
+
+DESTINATION: Jodhpur
+STATE: Rajasthan
+TRAVEL_TYPE: Historical, Cultural, Adventure
+BUDGET_LEVEL: Medium
+BEST_FOR: History lovers, photographers, families
+FAMOUS_FOR: Mehrangarh Fort, blue city, Jaswant Thada
+ESTIMATED_DAILY_EXPENSE: ₹1800 - ₹3500
+ESTIMATED_3_DAY_BUDGET: ₹5500 - ₹10000
+TRAVEL_TIPS: Carry water and sun protection during outdoor sightseeing.
+
+
+DESTINATION: Jaisalmer
+STATE: Rajasthan
+TRAVEL_TYPE: Desert, Adventure, Historical, Cultural
+BUDGET_LEVEL: Medium
+BEST_FOR: Adventure seekers, couples, photographers
+FAMOUS_FOR: Golden Fort, desert camps, camel safari, dunes
+ESTIMATED_DAILY_EXPENSE: ₹2000 - ₹4000
+ESTIMATED_3_DAY_BUDGET: ₹6500 - ₹12000
+TRAVEL_TIPS: Desert temperatures can change significantly between day and night.
+
+
+DESTINATION: Pushkar
+STATE: Rajasthan
+TRAVEL_TYPE: Religious, Cultural, Historical
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Spiritual travellers, backpackers, photographers
+FAMOUS_FOR: Brahma Temple, Pushkar Lake, ghats, local markets
+ESTIMATED_DAILY_EXPENSE: ₹1200 - ₹2500
+ESTIMATED_3_DAY_BUDGET: ₹4000 - ₹7500
+TRAVEL_TIPS: Respect local customs around religious sites.
+
+
+DESTINATION: Agra
+STATE: Uttar Pradesh
+TRAVEL_TYPE: Historical, Cultural, Family
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, couples, history lovers
+FAMOUS_FOR: Taj Mahal, Agra Fort, historical monuments
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Start sightseeing early and check monument opening schedules.
+
+
+DESTINATION: Amritsar
+STATE: Punjab
+TRAVEL_TYPE: Religious, Historical, Cultural, Food
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Families, spiritual travellers, food lovers
+FAMOUS_FOR: Golden Temple, Jallianwala Bagh, Wagah Border
+ESTIMATED_DAILY_EXPENSE: ₹1300 - ₹2800
+ESTIMATED_3_DAY_BUDGET: ₹4500 - ₹8000
+TRAVEL_TIPS: Dress respectfully when visiting religious places.
+
+
+DESTINATION: Rishikesh
+STATE: Uttarakhand
+TRAVEL_TYPE: Adventure, Spiritual, Nature
+BUDGET_LEVEL: Low to Medium
+BEST_FOR: Adventure seekers, spiritual travellers
+FAMOUS_FOR: River rafting, Ganga River, temples, yoga
+ESTIMATED_DAILY_EXPENSE: ₹1500 - ₹3000
+ESTIMATED_3_DAY_BUDGET: ₹5000 - ₹9000
+TRAVEL_TIPS: Adventure activities depend on seasonal conditions.
+
+
+DESTINATION: Jim Corbett
+STATE: Uttarakhand
+TRAVEL_TYPE: Wildlife, Nature, Adventure
+BUDGET_LEVEL: Medium
+BEST_FOR: Wildlife lovers, photographers, families
+FAMOUS_FOR: Tiger safari, forests, wildlife, river landscapes
+ESTIMATED_DAILY_EXPENSE: ₹2500 - ₹5000
+ESTIMATED_3_DAY_BUDGET: ₹8000 - ₹15000
+TRAVEL_TIPS: Book safaris early and follow park rules during wildlife tours.
+
+
+DESTINATION: Leh
+STATE: Ladakh
+TRAVEL_TYPE: Adventure, Nature, Mountain, Cultural
+BUDGET_LEVEL: High
+BEST_FOR: Adventure seekers, bikers, photographers
+FAMOUS_FOR: High-altitude landscapes, monasteries, mountain passes
+ESTIMATED_DAILY_EXPENSE: ₹3000 - ₹6000
+ESTIMATED_3_DAY_BUDGET: ₹10000 - ₹18000
+TRAVEL_TIPS: Allow time for acclimatization before travelling to high-altitude areas.
+
+
+DESTINATION: Andaman Islands
+STATE: Andaman and Nicobar Islands
+TRAVEL_TYPE: Beach, Adventure, Nature, Wildlife
+BUDGET_LEVEL: High
+BEST_FOR: Couples, families, adventure seekers
+FAMOUS_FOR: Beaches, coral reefs, scuba diving, marine life
+ESTIMATED_DAILY_EXPENSE: ₹3000 - ₹6000
+ESTIMATED_3_DAY_BUDGET: ₹10000 - ₹18000
+TRAVEL_TIPS: Book ferries and activities in advance during peak seasons.
+
+
+DESTINATION: Kaziranga
+STATE: Assam
+TRAVEL_TYPE: Wildlife, Nature, Adventure
+BUDGET_LEVEL: Medium
+BEST_FOR: Wildlife lovers, photographers, families
+FAMOUS_FOR: One-horned rhinoceros, grasslands, wildlife safaris
+ESTIMATED_DAILY_EXPENSE: ₹2000 - ₹4000
+ESTIMATED_3_DAY_BUDGET: ₹6500 - ₹12000
+TRAVEL_TIPS: Book safari permits early and follow wildlife safety guidelines.
