@@ -1,0 +1,17 @@
+# Secrets and local configuration
+.env
+!.env.example
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+# Runtime data
+chroma_db/
+instance/
+*.log
