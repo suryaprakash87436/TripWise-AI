@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan smarter trips with TripWise AI, a retrieval-augmented travel planner.">
+  <title>TripWise AI — Smart Travel Planner</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">✦ TripWise <span>AI</span></a><span class="tag">RAG-powered travel planning</span></header>
+<main class="shell">
+  <section class="hero">
+    <p class="eyebrow">YOUR NEXT JOURNEY STARTS HERE</p>
+    <h1>Travel better.<br><em>Plan smarter.</em></h1>
+    <p class="sub">Tell us your budget, duration and travel vibe. Get a grounded destination recommendation and a practical itinerary.</p>
+  </section>
+  <section class="planner">
+    <form method="post" action="/plan" class="form">
+      <div class="field"><label for="budget">Total budget (₹)</label><input id="budget" name="budget" type="number" min="1" max="10000000" placeholder="e.g. 15000" required></div>
+      <div class="field"><label for="days">Trip duration</label><div class="suffix"><input id="days" name="days" type="number" min="1" max="30" value="3" required><span>days</span></div></div>
+      <div class="field"><label for="travelers">Travelers</label><input id="travelers" name="travelers" type="number" min="1" max="20" value="1" required></div>
+      <div class="field wide"><label for="preference">What kind of trip do you like?</label><input id="preference" name="preference" maxlength="120" placeholder="Beach, nature, adventure, history, family..." required></div>
+      <button type="submit">Build my travel plan <span>↗</span></button>
+    </form>
+    {% if error %}<div class="alert">{{ error }}</div>{% endif %}
+  </section>
+  {% if result %}
+  <section class="result">
+    <div class="result-head"><div><p class="eyebrow">YOUR PERSONALIZED PLAN</p><h2>Trip recommendation</h2></div><span class="mode">{{ result.mode }}</span></div>
+    <article class="answer">{{ result.answer | markdown_to_html if false else result.answer }}</article>
+    {% if result.sources %}<h3>Retrieved knowledge sources</h3><div class="sources">{% for source in result.sources %}<div class="source"><strong>{{ source.destination }}</strong><span>{{ source.state }} · relevance {{ source.retrieval_score }}</span></div>{% endfor %}</div>{% endif %}
+  </section>
+  {% endif %}
+  <section class="how"><div><span>01</span><h3>Understand</h3><p>Your preferences are converted into a travel search query.</p></div><div><span>02</span><h3>Retrieve</h3><p>Relevant destination records are ranked from the local knowledge base.</p></div><div><span>03</span><h3>Generate</h3><p>The optional LLM creates a grounded plan from retrieved context.</p></div></section>
+  <footer>TripWise AI · Estimates are informational. Verify prices, bookings and local conditions before travel.</footer>
+</main>
+</body></html>
