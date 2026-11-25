@@ -1,6 +1,6 @@
 # TripWise AI — Smart Travel Planner
 
-**Live application:** https://tripwise-ai-mvnq7z7wqxeb2cmbxdxouz.streamlit.app/  
+**Live application:** https://tripwise-ai-main1.streamlit.app/  
 **GitHub repository:** https://github.com/suryaprakash87436/TripWise-AI
 
 TripWise AI is an AI-assisted travel planner. It recommends destinations from a curated dataset using hybrid BM25 + TF-IDF retrieval and can generate a grounded itinerary using the Groq API.
@@ -61,7 +61,7 @@ cd TripWise-AI
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\\.venv\\Scripts\\Activate.ps1
 ```
 
 ### 3. Install dependencies
