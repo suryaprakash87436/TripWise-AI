@@ -1,153 +1,137 @@
 # TripWise AI — Smart Travel Planner
 
-A portfolio-ready Generative AI / Retrieval-Augmented Generation (RAG) travel-planning web application. It retrieves relevant destinations from a curated local dataset and can optionally use Groq API to produce a natural-language itinerary grounded in the retrieved records.
+**Live application:** https://tripwise-ai-mvnq7z7wqxeb2cmbxdxouz.streamlit.app/  
+**GitHub repository:** https://github.com/suryaprakash87436/TripWise-AI
+
+TripWise AI is an AI-assisted travel planner. It recommends destinations from a curated dataset using hybrid BM25 + TF-IDF retrieval and can generate a grounded itinerary using the Groq API.
 
 ## Features
 
-- Personalized destination recommendations from budget, duration, group size and travel preference.
-- Hybrid BM25 + hybrid BM25 + TF-IDF retrieval with unigram/bigram matching and budget-aware reranking.
-- Optional Groq generation grounded in retrieved destination records.
-- Local fallback mode works without an LLM API key.
-- Displays retrieved source destinations and relevance scores for transparency.
-- Flask web UI, JSON API, health-check endpoint and input validation.
-- Automated tests and Render deployment configuration.
+- Personalized trip planning using total group budget, trip duration, number of travelers and travel preference.
+- Hybrid BM25 + TF-IDF retrieval to find relevant destinations in the curated dataset.
+- Optional Groq API generation using retrieved destination records as context.
+- Local fallback itinerary when the Groq API key is not configured or the API is unavailable.
+- Retrieved destination matches and relevance scores for transparency.
+- Streamlit user interface.
 
-## Architecture
+## Technology stack
+
+- **Language:** Python
+- **Frontend:** Streamlit
+- **Retrieval:** BM25, TF-IDF and cosine similarity
+- **AI generation:** Groq API
+- **Libraries:** scikit-learn, Requests, python-dotenv
+- **Dataset:** Curated destination records in `data/destinations.txt`
+- **Version control:** Git and GitHub
+- **Deployment:** Streamlit Community Cloud
+
+## How it works
 
 ```text
-User form / JSON client
+User enters trip details
         |
         v
-     Flask API
+Streamlit interface
         |
         v
-Input validation + query construction
+TripPlanner builds a search query
         |
         v
-Hybrid BM25 + hybrid BM25 + TF-IDF retrieval -> budget-aware reranking
+Hybrid BM25 + TF-IDF retrieval
         |
         v
-Top destination records (data/destinations.txt)
+Top matching destination records
         |
-        +---- Groq API configured? ---- Yes --> Grounded itinerary generation
-        |                                  No  --> Local fallback planner
+        +---- Groq API configured? ---- Yes --> Grounded AI itinerary
+        |                                  No  --> Local fallback itinerary
         v
-Answer + retrieved source records
-        |
-        v
-Web UI / JSON response
+Itinerary + retrieved destination matches
 ```
 
-## Run locally (Windows PowerShell)
+## Run locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/suryaprakash87436/TripWise-AI.git
+cd TripWise-AI
+```
+
+### 2. Create and activate a virtual environment (Windows PowerShell)
 
 ```powershell
-# 1. Extract the ZIP and enter the project folder
-cd path\to\TripWise-AI
-
-# 2. Create and activate a virtual environment
-py -3.11 -m venv .venv
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
 
-# 3. Install dependencies
+### 3. Install dependencies
+
+```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
-# 4. Create local environment configuration
-Copy-Item .env.example .env
-
-# 5. Run
-python app.py
 ```
 
-Open http://127.0.0.1:5000
+### 4. Configure the Groq API key (optional)
 
-Without `GROQ_API_KEY`, the app still works using local retrieval and a deterministic itinerary summary. To enable AI generation, add a valid Groq API key to `.env`. Never commit `.env` to GitHub.
+Create a local `.env` file in the project root:
 
-## API
-
-### `GET /health`
-Returns service health status.
-
-### `GET /api`
-Returns project metadata and whether the Groq key is configured.
-
-### `POST /plan`
-Form fields or JSON:
-```json
-{
-  "budget": 15000,
-  "days": 3,
-  "travelers": 2,
-  "preference": "beach and history"
-}
+```env
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=openai/gpt-oss-20b
 ```
 
-Example PowerShell request:
-```powershell
-$body = @{
-  budget = 15000
-  days = 3
-  travelers = 2
-  preference = "beach and history"
-} | ConvertTo-Json
+Keep `.env` private. It is excluded from Git by `.gitignore`. Never commit or share your real API key. The app can still use its local retrieval fallback without a key.
 
-Invoke-RestMethod -Uri http://127.0.0.1:5000/plan -Method Post -ContentType "application/json" -Body $body
+### 5. Start the Streamlit app
+
+```bash
+streamlit run streamlit_app.py
 ```
 
-## Run tests
+Streamlit will display the local URL in the terminal, usually http://localhost:8501.
 
-```powershell
-pip install pytest
-python -m pytest -q
+## Deploy on Streamlit Community Cloud
+
+1. Push this repository to GitHub.
+2. Open [Streamlit Community Cloud](https://share.streamlit.io/) and sign in with GitHub.
+3. Create or deploy an app from this repository.
+4. Set the **Main file path** to `streamlit_app.py`.
+5. In the app settings, open **Secrets** and add:
+
+```toml
+GROQ_API_KEY = "your_groq_api_key"
+GROQ_MODEL = "openai/gpt-oss-20b"
 ```
 
-## Deploy to Render
+6. Save the secrets and deploy or reboot the app.
 
-1. Create a new GitHub repository named `TripWise-AI`.
-2. Push the project files to that repository (commands below).
-3. In Render, choose **New + → Web Service**, connect the GitHub repository.
-4. Render detects `render.yaml`; verify build command `pip install -r requirements.txt` and start command `gunicorn app:app --workers 1 --threads 4 --timeout 120`.
-5. Add `GROQ_API_KEY` as a secret environment variable in Render if you want Groq generation. If omitted, local fallback mode remains available.
-6. Deploy and open the generated Render URL. Check `/health`.
+Do not put API keys in Python source files, README files, screenshots or Git commits.
 
-### GitHub upload commands
+## Dataset structure
 
-Run these commands from the project folder after creating an empty GitHub repository. Replace `YOUR_GITHUB_USERNAME` with your GitHub username.
+The app reads destination information from:
 
-```powershell
-git init
-git add .
-git status
-git commit -m "Build TripWise AI RAG travel planner"
-git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/TripWise-AI.git
-git push -u origin main
+```text
+data/
+  destinations.txt
 ```
+
+The dataset contains destination records and fields such as destination name, state, travel type, budget estimates, attractions and travel tips.
+
+## Important limitations
+
+- Recommendations are limited to the destinations in the bundled dataset.
+- Budget values are estimates from the dataset, not live quotations.
+- The app does not provide live transport schedules, hotel availability, booking or payment.
+- Groq-powered generation requires a valid API key and internet access. Without it, the local fallback can still generate a basic itinerary.
 
 ## Resume description
 
-**TripWise AI — RAG-Based Smart Travel Planner | Python, Flask, scikit-learn, Groq API, REST API**
+**TripWise AI — AI-Assisted Travel Planner | Python, Streamlit, Groq API, BM25, TF-IDF, scikit-learn**
 
-- Developed an AI-assisted travel planning web application that recommends destinations and creates multi-day itineraries from user budget, trip duration, group size and preferences.
-- Implemented a retrieval-augmented workflow using hybrid BM25 + hybrid BM25 + TF-IDF retrieval and budget-aware reranking over a curated destination knowledge base.
-- Integrated optional Groq generation with retrieved context to reduce unsupported recommendations, plus a local fallback mode.
-- Built Flask web and JSON API endpoints with input validation, health checks, source transparency and automated tests.
-- Prepared cloud deployment using Gunicorn and Render configuration.
+- Built a travel-planning application that accepts budget, trip duration, group size and travel preferences.
+- Implemented hybrid BM25 + TF-IDF retrieval to rank relevant destinations from a curated knowledge base.
+- Integrated Groq API for itinerary generation grounded in retrieved destination records, with a local fallback mode.
+- Deployed the application using Streamlit Community Cloud and managed API credentials through application secrets.
 
-**Important:** Only claim features you have run and verified. The current dataset contains destination estimates, not live flight/hotel prices or real-time availability. Do not describe it as live booking software.
-
-## Advanced improvements you can build next
-
-1. Replace TF-IDF-only retrieval with a hybrid BM25 + vector embedding retriever and evaluate retrieval quality.
-2. Add user accounts, saved trips and PostgreSQL persistence.
-3. Add live weather and maps using official APIs, with source links and caching.
-4. Add budget breakdown by transport, food, stay and activities, clearly labeling estimates.
-5. Add multilingual output and downloadable PDF itineraries.
-6. Add CI with GitHub Actions and test coverage reporting.
-
-## Limitations
-
-- Recommendations are limited to `data/destinations.txt`.
-- Budget values are dataset estimates and are not live quotes.
-- Groq generation requires a valid API key and internet access.
-- Render's local filesystem may be ephemeral; this version does not store user accounts or saved trips.
+Only list features and deployment details that you have personally tested and verified.
